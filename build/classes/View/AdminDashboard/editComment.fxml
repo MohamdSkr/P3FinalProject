@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../../Style/AdminDashboard/updatepatient.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashboard.EditCommentController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="1200.0" styleClass="sidebar">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1200.0">
+               <children>
+                  <ImageView fx:id="adminImg" fitHeight="70.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/doctorLogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label styleClass="dashboardTitle" text="Doctor Dashboard" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="100.0" prefHeight="500.0" prefWidth="1200.0" style="-fx-background-color: white;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="1200.0" spacing="30.0" style="-fx-padding: 15pt;">
+               <children>
+                  <Label styleClass="labelTitle" text="Edit Comment Appoitment">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="462.0" prefWidth="927.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="753.0" spacing="100.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" spacing="20.0">
+                                 <children>
+                                    <Label prefWidth="200.0" styleClass="labelStyle" text="Patint Name" />
+                                    <TextField fx:id="patientField" disable="true" styleClass="inputStyle" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="237.0" layoutY="10.0" prefHeight="100.0" prefWidth="400.0" spacing="20.0">
+                                 <children>
+                                    <Label prefWidth="200.0" styleClass="labelStyle" text="Date" />
+                                    <TextField fx:id="dateField" disable="true" styleClass="inputStyle" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="83.0" prefWidth="753.0" spacing="100.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" spacing="15.0">
+                                 <children>
+                                    <Label prefWidth="200.0" styleClass="labelStyle" text="Day" />
+                                    <TextField fx:id="dayField" disable="true" styleClass="inputStyle" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="237.0" layoutY="10.0" prefHeight="100.0" prefWidth="400.0" spacing="15.0">
+                                 <children>
+                                    <Label prefWidth="200.0" styleClass="labelStyle" text="Time" />
+                                    <TextField fx:id="timeField" disable="true" styleClass="inputStyle" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="120.0" prefWidth="753.0" spacing="100.0">
+                           <children>
+                              <HBox prefHeight="119.0" prefWidth="903.0">
+                                 <children>
+                                    <Label prefWidth="200.0" styleClass="labelStyle" text="Comment" />
+                                    <TextArea fx:id="commentField" prefHeight="119.0" prefWidth="704.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="61.0" prefWidth="753.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="editBtn" mnemonicParsing="false" onAction="#editBtnHandel" text="Edit">
+                                 <styleClass>
+                                    <String fx:value="addBtn" />
+                                    <String fx:value="btnRadius" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandel" text="Back">
+                                 <styleClass>
+                                    <String fx:value="backBtn" />
+                                    <String fx:value="btnRadius" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

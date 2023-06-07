@@ -1,0 +1,97 @@
+.mainFxmlClass {
+
+}
+
+.sidebar {
+    -fx-text-fill: white;
+    -fx-background-color: radial-gradient(center 50% 50% , radius 100% , #0d46c1, #001258);
+}
+
+.dashboardTitle {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16pt;
+}
+
+.labelTitle {
+    -fx-text-fill: #0d46c1;
+    -fx-font-weight: bold;
+    -fx-font-size: 32pt;
+}
+
+Button {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+Button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #0d46c1;
+}
+
+.patientBtnActive {
+    -fx-background-color: white;
+    -fx-text-fill: #0d46c1;
+}
+
+.labelStyle {
+    -fx-text-fill: #0d46c1;
+    -fx-font-weight: bold;
+    -fx-font-size: 16pt;
+}
+
+.inputStyle {
+    -fx-padding: 5pt;
+    -fx-font-size: 14pt;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3pt;
+    -fx-background-radius: 3pt;
+}
+
+.searchBtn {
+    -fx-background-color: #0d46c1;
+    -fx-padding: 5pt;
+    -fx-font-weight: bold;
+}
+
+.searchBtn:hover {
+    -fx-background-color: #0099ff;
+    -fx-text-fill: white;
+}
+
+.addBtn {
+    -fx-background-color: #0d46c1;
+    -fx-padding: 10pt 15pt 10pt 15pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.addBtn:hover {
+    -fx-background-color: #0e53f2;
+}
+
+.updateBtn {
+    -fx-background-color: green;
+    -fx-padding: 10pt 15pt 10pt 15pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.updateBtn:hover {
+    -fx-background-color: #00cc00;
+}
+
+.deleteBtn {
+    -fx-background-color: red;
+    -fx-padding: 10pt 15pt 10pt 15pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.deleteBtn:hover {
+    -fx-background-color: #ff4200;
+}
+
+.btnRadius {
+    -fx-background-radius: 10pt;
+}

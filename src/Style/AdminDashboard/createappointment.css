@@ -1,0 +1,85 @@
+.mainFxmlClass {
+
+}
+
+.sidebar {
+    -fx-text-fill: white;
+    -fx-background-color: radial-gradient(center 50% 50% , radius 100% , #0d46c1, #001258);
+}
+
+.dashboardTitle {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16pt;
+}
+
+Button {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+Button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #0d46c1;
+}
+
+.patientBtnActive {
+    -fx-background-color: white;
+    -fx-text-fill: #0d46c1;
+}
+
+.titleStyle {
+    -fx-text-fill: #0d46c1;
+    -fx-font-weight: bold;
+    -fx-font-size: 24pt;
+}
+
+.labelStyle {
+    -fx-text-fill: #0d46c1;
+    -fx-font-weight: bold;
+    -fx-font-size: 16pt;
+}
+
+.labelTitle {
+    -fx-text-fill: #0d46c1;
+    -fx-font-weight: bold;
+    -fx-font-size: 32pt;
+}
+
+.inputStyle {
+    -fx-padding: 5pt;
+    -fx-font-size: 14pt;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3pt;
+    -fx-background-radius: 3pt;
+    -fx-background-color: transparent;
+}
+
+.addBtn {
+    -fx-background-color: green;
+    -fx-padding: 10pt 15pt 10pt 15pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+}
+
+.addBtn:hover {
+    -fx-background-color: #00cc00;
+}
+
+.backBtn {
+    -fx-background-color: black;
+    -fx-padding: 10pt 15pt 10pt 15pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+}
+
+.backBtn:hover {
+    -fx-background-color: #4c4c4c;
+}
+
+.btnRadius {
+    -fx-background-radius: 10pt;
+}
+

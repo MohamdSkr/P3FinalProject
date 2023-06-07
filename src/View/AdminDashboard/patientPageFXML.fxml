@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../../Style/AdminDashboard/patientpagefxml.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashboard.PatientPageFXMLController">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="230.0" styleClass="sidebar">
+         <children>
+            <ImageView fx:id="adminImg" fitHeight="80.0" fitWidth="86.0" layoutX="82.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/doctorLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="136.0" styleClass="dashboardTitle" text="Doctor Dashboard" />
+            <Button fx:id="bookedBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="298.0" mnemonicParsing="false" onAction="#bookedBtnHandel" prefHeight="49.0" prefWidth="225.0" text="Booked Appointments">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="appointmentsBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="249.0" mnemonicParsing="false" onAction="#appointmentsBtnHandel" prefHeight="49.0" prefWidth="225.0" text="Appointments ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="patientsBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#patientsBtnHandel" prefHeight="49.0" prefWidth="225.0" styleClass="patientBtnActive" text="Patients">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logoutBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="396.0" mnemonicParsing="false" onAction="#logoutBtnHandel" prefHeight="49.0" prefWidth="225.0" styleClass="sideParItemActive" text="Log out">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="finshBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="347.0" mnemonicParsing="false" onAction="#finshBtnHandel" prefHeight="49.0" prefWidth="225.0" text="Finshed Appointments">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="230.0" prefHeight="620.0" prefWidth="971.0" style="-fx-background-color: white;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="620.0" prefWidth="971.0" spacing="30.0" style="-fx-padding: 15pt;">
+               <children>
+                  <Label styleClass="labelTitle" text="Patients Information" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="744.0">
+                     <children>
+                        <TextField fx:id="searchField" prefHeight="40.0" prefWidth="392.0" promptText="first name of patient" styleClass="inputStyle">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></TextField>
+                        <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#searchBtnHandel" prefHeight="40.0" prefWidth="77.0" styleClass="searchBtn" text="Search">
+                           <HBox.margin>
+                              <Insets right="-5.0" />
+                           </HBox.margin></Button>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="360.0" spacing="10.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <Button fx:id="refershBtn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#refershBtnHandel" text="Refersh ">
+                           <styleClass>
+                              <String fx:value="updateBtn" />
+                              <String fx:value="btnRadius" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="patientsTable" prefHeight="289.0" prefWidth="744.0">
+                    <columns>
+                      <TableColumn fx:id="firstName" prefWidth="122.0" text="First Name" />
+                      <TableColumn fx:id="lastName" prefWidth="117.0" text="Last Name" />
+                        <TableColumn fx:id="age" prefWidth="92.0" text="Age" />
+                        <TableColumn fx:id="gender" prefWidth="120.0" text="Gender" />
+                        <TableColumn fx:id="phone" prefWidth="174.0" text="Phone" />
+                        <TableColumn fx:id="email" prefWidth="184.0" text="Email" />
+                        <TableColumn fx:id="role" prefWidth="121.0" text="Role" />
+                    </columns>
+                  </TableView>
+                  <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="753.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="createBtn" mnemonicParsing="false" onAction="#createBtnHandel" text="Create New Patient">
+                           <styleClass>
+                              <String fx:value="addBtn" />
+                              <String fx:value="btnRadius" />
+                           </styleClass></Button>
+                        <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateBtnHandel" text="Update">
+                           <styleClass>
+                              <String fx:value="updateBtn" />
+                              <String fx:value="btnRadius" />
+                           </styleClass></Button>
+                        <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnHandel" text="Delete">
+                           <styleClass>
+                              <String fx:value="deleteBtn" />
+                              <String fx:value="btnRadius" />
+                           </styleClass></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

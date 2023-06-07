@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" styleClass="vboxContainer" stylesheets="@../../Style/patientregister.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientRegisterController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="650.0" prefWidth="1200.0" spacing="10.0">
+         <children>
+            <Label styleClass="labelTitle" text="User Register">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="753.0" spacing="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="500.0" spacing="15.0">
+                     <children>
+                        <Label prefHeight="50.0" prefWidth="180.0" styleClass="labelStyle" text="Username" />
+                        <TextField fx:id="usernameField" prefWidth="300.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="237.0" layoutY="10.0" prefHeight="100.0" prefWidth="500.0" spacing="15.0">
+                     <children>
+                        <Label prefWidth="180.0" styleClass="labelStyle" text="Password" />
+                        <PasswordField fx:id="passwordField" prefWidth="300.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="83.0" prefWidth="753.0" spacing="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="500.0" spacing="15.0">
+                     <children>
+                        <Label prefWidth="180.0" styleClass="labelStyle" text="First Name" />
+                        <TextField fx:id="firstNameField" prefWidth="300.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="237.0" layoutY="10.0" prefHeight="100.0" prefWidth="500.0" spacing="15.0">
+                     <children>
+                        <Label prefWidth="180.0" styleClass="labelStyle" text="Last Name" />
+                        <TextField fx:id="lastNameField" prefWidth="300.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="80.0" prefWidth="753.0" spacing="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="500.0" spacing="15.0">
+                     <children>
+                        <Label prefWidth="180.0" styleClass="labelStyle" text="Age" />
+                        <TextField fx:id="ageField" prefWidth="300.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="500.0" spacing="15.0">
+                     <children>
+                        <Label prefWidth="180.0" styleClass="labelStyle" text="Phone" />
+                        <TextField fx:id="phoneField" prefWidth="300.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="753.0" spacing="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1300.0" spacing="15.0">
+                     <children>
+                        <Label prefWidth="180.0" styleClass="labelStyle" text="Email" />
+                        <TextField fx:id="emailField" prefHeight="57.0" prefWidth="901.0" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="65.0" prefWidth="500.0" spacing="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="500.0" spacing="10.0">
+                     <children>
+                        <Label styleClass="labelStyle" text="Gender : " />
+                        <RadioButton fx:id="maleChoice" mnemonicParsing="false" selected="true" styleClass="labelStyle" text="Male">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="genderChoice" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="femaleChoice" mnemonicParsing="false" styleClass="labelStyle" text="Fimale" toggleGroup="$genderChoice" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="500.0" spacing="10.0">
+                     <children>
+                        <Label styleClass="labelStyle" text="Role : " />
+                        <RadioButton fx:id="patinetChoice" mnemonicParsing="false" selected="true" styleClass="labelStyle" text="Patient">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="roleChoice" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="adminChoice" mnemonicParsing="false" styleClass="labelStyle" text="Admin" toggleGroup="$roleChoice" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="753.0" spacing="10.0">
+               <children>
+                  <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#registerBtnHandel" text="Register">
+                     <styleClass>
+                        <String fx:value="addBtn" />
+                        <String fx:value="btnRadius" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandel" text="Back">
+                     <styleClass>
+                        <String fx:value="backBtn" />
+                        <String fx:value="btnRadius" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="15.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

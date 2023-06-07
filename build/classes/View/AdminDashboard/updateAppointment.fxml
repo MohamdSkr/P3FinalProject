@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../../Style/AdminDashboard/createappointment.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashboard.UpdateAppointmentController">
+   <children>
+      <AnchorPane prefHeight="150.0" prefWidth="1200.0" styleClass="sidebar">
+         <children>
+            <HBox alignment="CENTER" prefHeight="150.0" prefWidth="1207.0">
+               <children>
+                  <ImageView fx:id="adminImg" fitHeight="100.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/doctorLogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label styleClass="dashboardTitle" text="Doctor Dashboard" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="152.0" prefHeight="500.0" prefWidth="1201.0" style="-fx-background-color: white;">
+         <children>
+            <VBox alignment="CENTER" layoutX="1.0" prefHeight="500.0" prefWidth="1200.0">
+               <children>
+                  <Label styleClass="titleStyle" text="Update Appointment Information">
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="793.0">
+                     <children>
+                        <Label fx:id="dateLabel" prefWidth="250.0" styleClass="labelStyle" text="Appointment Date" />
+                        <DatePicker fx:id="dateField" prefHeight="43.0" prefWidth="226.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="449.0">
+                     <children>
+                        <Label fx:id="timeLabel" prefWidth="250.0" styleClass="labelStyle" text="Appointment Time" />
+                        <TextField fx:id="timeField" styleClass="inputStyle" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="1200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateBtnHandel" text="Update">
+                           <styleClass>
+                              <String fx:value="addBtn" />
+                              <String fx:value="btnRadius" />
+                           </styleClass></Button>
+                        <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandel" text="Back">
+                           <styleClass>
+                              <String fx:value="backBtn" />
+                              <String fx:value="btnRadius" />
+                           </styleClass></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+
+.mainFxmlClass {
+
+}
+
+.vboxContainer {
+    -fx-background-color: radial-gradient(center 50% 50% , radius 100% , #0d46c1, #001258);
+}
+
+.labelStyle {
+    -fx-text-fill: white;
+    -fx-font-size: 18pt;
+    -fx-font-weight: bold;
+    -fx-padding: 5pt 0pt 5pt 0pt; 
+}
+
+.inputStyle {
+    -fx-background-color: transparent;
+    -fx-padding: 10pt;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-border-radius: 15pt;
+}
+
+.loginButton {
+    -fx-background-color: transparent;
+    -fx-padding: 10pt;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-border-radius: 15pt;
+}
+
+.loginButton:hover {
+    -fx-background-color: green;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10pt;
+}
+
+.backButton {
+    -fx-background-color: transparent;
+    -fx-padding: 10pt;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-border-radius: 15pt;
+}
+
+.backButton:hover {
+    -fx-background-color: black;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10pt;
+}

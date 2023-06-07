@@ -1,0 +1,69 @@
+
+.mainFxmlClass {
+
+}
+
+.vboxContainer {
+    -fx-background-color: radial-gradient(center 50% 50% , radius 100% , #0d46c1, #001258);
+}
+
+.pageTitle {
+    -fx-font-weight: bold;
+    -fx-font-size: 46pt;
+    -fx-font-weight: bold;
+}
+
+.adminUser {
+    -fx-background-color: transparent;
+    -fx-padding: 10pt;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-border-radius: 15pt;
+}
+
+.adminUser:hover {
+    -fx-background-color: blue;
+    -fx-padding: 10pt;
+    -fx-border-color: blue;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-background-radius: 10pt;
+}
+
+.patientUser {
+    -fx-background-color: transparent;
+    -fx-padding: 10pt;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-border-radius: 15pt;
+}
+
+.patientUser:hover {
+    -fx-background-color: red;
+    -fx-padding: 10pt;
+    -fx-border-color: red;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-background-radius: 10pt;
+}
+
+
+.registerBtn {
+    -fx-background-color: transparent;
+    -fx-padding: 10pt;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-border-radius: 15pt;
+}
+
+.registerBtn:hover {
+    -fx-background-color: black;
+    -fx-padding: 10pt;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-background-radius: 10pt;
+}

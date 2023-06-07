@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" styleClass="vboxContainer" stylesheets="@../../Style/adminlogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminLoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="325.0" layoutY="75.0" prefHeight="450.0" prefWidth="550.0" spacing="30.0" stylesheets="@../../Style/adminlogin.css">
+         <children>
+            <ImageView fx:id="adminLogo" fitHeight="111.0" fitWidth="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/admin.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="550.0" spacing="40.0">
+               <children>
+                  <Label fx:id="adminLabel" prefHeight="45.0" prefWidth="120.0" styleClass="labelStyle" text="Username" textFill="WHITE" />
+                  <TextField fx:id="adminField" prefHeight="57.0" prefWidth="300.0" styleClass="inputStyle" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="60.0" prefWidth="550.0" spacing="40.0">
+               <children>
+                  <Label fx:id="passwordLabel" prefHeight="45.0" prefWidth="120.0" styleClass="labelStyle" text="Password" />
+                  <PasswordField fx:id="passwordField" prefHeight="57.0" prefWidth="300.0" styleClass="inputStyle" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="275.0" prefHeight="65.0" prefWidth="550.0" spacing="40.0">
+               <children>
+                  <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#loginBtnHandel" prefHeight="65.0" prefWidth="120.0" styleClass="loginButton" text="Login" />
+                  <Button fx:id="backBtn" layoutX="227.0" layoutY="10.0" mnemonicParsing="false" onAction="#backBtnBtnHandel" prefHeight="65.0" prefWidth="120.0" styleClass="backButton" text="Back" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
